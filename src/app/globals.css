@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script&family=Open+Sans&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #0A090B;
+  --bg-tertiary: #EEE4AA;
+  --font-primary: #0A090B;
+  --font-secondary: #FFFFFF;
+  --button-primary: #0A090B;
+  --button-secondary: #FFFFFF; 
+}
+
 
 
 body {

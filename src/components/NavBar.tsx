@@ -50,7 +50,7 @@ export function NavBar() {
         <Link href={"/"} className="text-xl z-0 px-3">
           Fine Dining
         </Link>
-        <a
+        {/* <a
           href="tel:408-761-4606"
           target="_blank"
           rel="noreferrer noopener"
@@ -67,7 +67,7 @@ export function NavBar() {
         >
           <Image src={MailIcon} alt="pfp" width={25} />
           <span className="pl-1">E-mail</span>
-        </a>
+        </a> */}
         <button
           onClick={handleClick}
           className="inline flex flex-col justify-center items-center z-20 lg:hidden"
@@ -95,11 +95,11 @@ export function NavBar() {
           <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/">
             Home
           </Link>
-          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/portfolio">
-            Portfolio
+          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/menu">
+            Menu
           </Link>
-          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/requestservice">
-            Request Service
+          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/reservations">
+            Reservations
           </Link>
         </div>
         <div className="flex gap-8 px-2 z-0">
