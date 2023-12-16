@@ -14,9 +14,30 @@ import PhoneSvg from "../../public/icons/phone-svgrepo-com.svg";
 
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isActiveHome, setIsActiveHome] = useState(true);
+  const [isActiveMenu, setIsActiveMenu] = useState(false);
+  const [isActiveReservations, setIsActiveReservations] = useState(false);
   
   const handleClick = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleClickHome = () => {
+    setIsActiveHome(true)
+    setIsActiveMenu(false)
+    setIsActiveReservations(false)
+  };
+
+  const handleClickMenu = () => {
+    setIsActiveMenu(true)
+    setIsActiveReservations(false)
+    setIsActiveHome(false)
+  };
+
+  const handleClickReservations = () => {
+    setIsActiveReservations(true)
+    setIsActiveMenu(false)
+    setIsActiveHome(false)
   };
 
   return (
@@ -92,13 +113,19 @@ export function NavBar() {
           ></span>
         </button>
         <div className="hidden lg:flex gap-6">
-          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/">
+          <Link className={`text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
+            isActiveHome ? "border-b-[3px] border-black" : "transition ease-in-out border-b-[3px] border-white duration-500"
+          }`} onClick={handleClickHome} href="/">
             Home
           </Link>
-          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/menu">
+          <Link className={`text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
+            isActiveMenu ? "border-b-[3px] border-black" : "transition ease-in-out border-b-[3px] border-white duration-500"
+          }`} onClick={handleClickMenu} href="/menu">
             Menu
           </Link>
-          <Link className="text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:focus:scale-x-100" href="/reservations">
+          <Link className={`text-l relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
+            isActiveReservations ? "border-b-[3px] border-black" : "transition ease-in-out border-b-[3px] border-white duration-500"
+          }`} onClick={handleClickReservations} href="/reservations">
             Reservations
           </Link>
         </div>
