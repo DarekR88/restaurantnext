@@ -11,7 +11,7 @@ export default function Home() {
             <Image src={DiningImg} alt="dining" className="relative lg:w-[500px] lg:h-[285px] z-10" />
             <div className="relative -top-[225px] left-[60px] lg:w-[500px] lg:h-[285px] bg-bg-tertiary z-0"></div>
           </div>
-          <div className="w-screen flex flex-col lg:w-[600px] justify-center">
+          <div className="w-screen flex flex-col text-center lg:text-left lg:items-left lg:w-[600px] justify-center">
             <h1 className="text-6xl font-Arizonia z-10">Timeless Flavors</h1>
             <p className="text-xl font-Open font-thin lg:pl-5">
               Butter, cheese, sugar, salt, sweet, savory. Experience the highest quality
