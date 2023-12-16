@@ -22,14 +22,14 @@ export default function Menu() {
       <div className="flex flex-row gap-4 items-center justify-center">
         <button
           onClick={handleClickFood}
-          className={`${isActiveFood ? "border-b-[3px] border-black" : "border-b-0"}`}
+          className={`${isActiveFood ? "transition ease-in-out border-b-[3px] border-black border-opacity-100 duration-500" : "transition ease-in-out border-b-[3px] border-opacity-25 duration-500"}`}
         >
           Food
         </button>
         <div className="relative h-[40px] w-[3px] bg-black"></div>
         <button
           onClick={handleClickWine}
-          className={`${isActiveWine ? "border-b-[3px] border-black" : "border-b-0"}`}
+          className={`${isActiveWine ? "transition ease-in-out border-b-[3px] border-black border-opacity-100 duration-500" : "transition ease-in-out border-b-[3px] border-opacity-25 duration-500"}`}
         >
           Wine
         </button>
