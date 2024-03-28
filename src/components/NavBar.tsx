@@ -68,8 +68,8 @@ export function NavBar() {
         >
           <Image src={PhoneSvg} alt="pfp" width={23} />
         </a>
-        <Link href={"/"} className="text-xl z-0 px-3">
-          Fine Dining
+        <Link href={"/"} className="text-5xl z-0 px-3 font-Dancing">
+          Oui Oui
         </Link>
         {/* <a
           href="tel:408-761-4606"
