@@ -20,7 +20,7 @@ export default function Home() {
             <h1 className="text-6xl font-Arizonia z-10">Timeless Flavors</h1>
             <p className="text-xl font-Open font-thin lg:pl-5">
               Butter, cheese, sugar, salt, sweet, savory. Experience the highest
-              quality ingredients cooked to a degree of excellence you can't
+              quality ingredients cooked to a degree of excellence you can&#39;t
               find anywhere else.
             </p>
           </div>
